@@ -128,8 +128,8 @@ mod tests {
         assert_eq!(value, bits);
 
         // simulate accel_hpf
-        let bitstart = Bits::ACCEL_CONFIG_ACCEL_HPF_BIT;
-        let length = Bits::ACCEL_CONFIG_ACCEL_HPF_LENGTH;
+        let bitstart = 2; // Bits::ACCEL_CONFIG_ACCEL_HPF_BIT;
+        let length = 3; // Bits::ACCEL_CONFIG_ACCEL_HPF_LENGTH;
         assert_eq!(get_bits(original_value, bitstart, length), 0b00000011);
 
         let mode: u8 = 7;
